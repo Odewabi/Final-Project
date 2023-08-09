@@ -1,27 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Project Starter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
     <meta name="robots" content="index,follow" />
-    <meta name="description" content="TODO: A starter project for ..." />
+    <meta name="description" content="A food page..." />
 
-    <link rel="stylesheet" href="./stylesheets/main.css" />
-  </head>
+    <link rel="stylesheet" href="./stylesheet/index.css" />
+</head>
 
-  <body>
-    <!-- Your HTML goes here -->
-    <h1 class="display-2 text-center my-5 py-5">
-      <span class="d-block py-5">
-        <i class="bi bi-filetype-html text-primary"></i>
-        <i class="bi bi-filetype-css text-danger"></i>
-        <i class="bi bi-filetype-js text-success"></i>
-      </span>
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="ingredients.html">Ingredients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instructions.html">Instructions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-      Welcome to CS 2350!
-    </h1>
+    <!-- Jumbotron with Background Image -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Welcome to my Recipe Collection</h1>
+        </div>
 
-    <script type="module" src="./javascripts/main.js"></script>
-  </body>
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="food-card" data-food="Easy Eggplant-Parmesan" style="width: 18rem;">
+                    <img src="./images/Eggplant-Parmesan-014.jpg" class="card-img-top" alt="Easy Eggplant-Parmesan">
+                    <div class="card-body">
+                        <h5 class="card-title">Easy Eggplant-Parmesan</h5>
+                        <p class="card-text">Here's one of the most popular Italian dinner recipes of all time:
+                            Eggplant
+                            Parmesan! It's got bubbly cheese, garlicky tomato sauce, and savory, meaty breaded
+                            eggplant. This
+                            vegetarian Italian classic is hearty, filling, and pleases just about everyone.
+                            Here's our best spin
+                            on the recipe: faster and easier to make at home than most recipes and full of
+                            incredible flavor.
+                        </p>
+                        <a href="ingredients.html" class="btn btn-primary ingredient-link" data-food="Easy Eggplant-Parmesan">Ingredients</a>
+                    </div>
+                </div>
+
+                <div class="food-card" data-food="Easy Stuffed Shells" style="width: 18rem;">
+                    <img src="./images/Stuffed-Shells-002.webp" class="card-img-top" alt="Easy Stuffed Shells">
+                    <div class="card-body">
+                        <h5 class="card-title">Easy Stuffed Shells</h5>
+                        <p class="card-text">Here's an Italian dinner that's simple, hearty and pleases a crowd:
+                            this easy
+                            Stuffed Shells recipe! Stuff pasta shells with ricotta, mozzarella, Parmesan and
+                            spinach, then bake
+                            them up in a bath of garlicky tomato sauce. It makes your kitchen smell heavenly,
+                            and the first bite
+                            into one of those jumbo shells confirms it's just as tasty as the smell.</p>
+                        <a href="ingredients.html" class="btn btn-primary ingredient-link" data-food="Easy Stuffed Shells">Ingredients</a>
+                    </div>
+                </div>
+
+                <div class="food-card" data-food="Cacio e Pepe" style="width: 18rem;">
+                    <img src="./images/Cacio-e-pepe-008.jpg" class="card-img-top" alt="Cacio e Pepe">
+                    <div class="card-body">
+                        <h5 class="card-title">Cacio e Pepe</h5>
+                        <p class="card-text">Here's an extraordinarily easy Italian dinner: Cacio e pepe! This
+                            Roman pasta dish
+                            translates to "cheese and pepper", with a simple sauce made of butter, Pecorino
+                            Romano cheese and
+                            pepper. It makes an irresistibly creamy warm pasta that bursts forth with flavor.
+                            Italian cuisine at
+                            its finest!</p>
+                        <a href="ingredients.html" class="btn btn-primary" data-food="Cacio e Pepe">Ingredients</a>
+                    </div>
+                </div>
+
+                <div class="food-card" data-food="Shrimp Fra Diavolo" style="width: 18rem;">
+                    <img src="./images/Shrimp-Fra-Diavola-029.webp" class="card-img-top" alt="Shrimp Fra Diavolo">
+                    <div class="card-body">
+                        <h5 class="card-title">Shrimp Fra Diavolo</h5>
+                        <p class="card-text">Want an Italian dinner to impress…with a little kick? Try Shrimp
+                            Fra Diavolo! This
+                            Italian-style dish stars tender shrimp that swim in a garlicky, spicy tomato sauce.
+                            “Fra diavolo”
+                            translates to “brother devil” in Italian, alluding to the intense heat of this dish.
+                            But make it
+                            homemade and you can customize the spiciness to your taste</p>
+                        <a href="ingredients.html" class="btn btn-primary" data-food="Shrimp Fra Diavolo">Ingredients</a>
+                    </div>
+                </div>
+
+                <div class="food-card" data-food="Stuffed Zucchini Boats" style="width: 18rem;">
+                    <img src="./images/Zucchini-Boat-012.jpg" class="card-img-top" alt="Stuffed Zucchini Boats">
+                    <div class="card-body">
+                        <h5 class="card-title">Stuffed Zucchini Boats</h5>
+                        <p class="card-text">Hollow out zucchini into shells, then stuff it with sausage,
+                            tomatoes, garlic,
+                            mozzarella and Parmesan cheese. Top with some crispy breadcrumbs, bake until golden
+                            brown, and wow!
+                            These are packed with intensely savory flavor. This recipe makes a zucchini lover
+                            out of anyone!
+                        </p>
+                        <a href="ingredients.html" class="btn btn-primary" data-food="Stuffed Zucchini Boats">Ingredients</a>
+                    </div>
+                </div>
+
+                <div class="food-card" data-food="Pasta Pomodoro" style="width: 18rem;">
+                    <img src="./images/Pasta-Pomodoro-009.jpg" class="card-img-top" alt="Pasta Pomodoro">
+                    <div class="card-body">
+                        <h5 class="card-title">Pasta Pomodoro</h5>
+                        <p class="card-text">Here's an Italian staple recipe that every home cook should know:
+                            Pasta Pomodoro!
+                            This classic Italian sauce is pure in its simplicity: simmering tomatoes and a few
+                            aromatic
+                            vegetables make a straightforward yet nuanced flavor. It takes a little time to
+                            simmer, but it's
+                            well worth it for the ease of this recipe: and the bold flavor! </p>
+                        <a href="ingredients.html" class="btn btn-primary" data-food="Pasta Pomodoro">Ingredients</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ingredient-container"></div>
+
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center py-3">
+        <div class="container-fluid">
+            <i>italiandinner</i>
+            <h2>recipes of culture</h2>
+            <p>&copy; 2023. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="./javascripts/index.js"></script>
+</body>
+
 </html>

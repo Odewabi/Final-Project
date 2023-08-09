@@ -1,0 +1,52 @@
+@import url("bootstrap/dist/css/bootstrap.min.css");
+@import url("bootstrap-icons/font/bootstrap-icons.css");
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+
+.container {
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Styles */
+.navbar {
+    margin-bottom: 10px;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* About Section Styles */
+.col-md-6 {
+    margin-bottom: 30px;
+}
+
+/* Image Styles */
+.img-fluid {
+    border-radius: 50%;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+.footer h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Centering the footer text */
+.footer p {
+    margin: 0;
+}

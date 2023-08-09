@@ -1,0 +1,59 @@
+@import url("bootstrap/dist/css/bootstrap.min.css");
+@import url("bootstrap-icons/font/bootstrap-icons.css");
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+
+.container {
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.footer {
+    background-color: #343a40;
+}
+
+/* Navbar styles */
+.navbar {
+    margin-bottom: 30px;
+}
+
+/* Card styles */
+.card-body {
+    padding: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .card {
+        width: auto;
+    }
+}
+
+/* Center align text inside footer */
+.footer p, .footer h2 {
+    text-align: center;
+}
+
+/* Adjust spacing */
+.footer i {
+    margin-right: 5px;
+}
