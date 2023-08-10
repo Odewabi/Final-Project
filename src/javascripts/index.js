@@ -1,22 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const foodCards = document.querySelectorAll('.food-card');
-    const ingredientContainer = document.querySelector('.ingredient-container');
+    const link = document.querySelector('a');
+    const displayArea = document.getElementById('displayArea');
 
-    foodCards.forEach(function(card) {
-        const foodName = card.getAttribute('data-food');
-        card.addEventListener('click', function() {
-            fetchIngredientContent(foodName);
-        });
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        const sourcePageURL = link.getAttribute('href');
+        const contentToDisplay = document.querySelector(ingredient.html).innerHTML;
+
+        displayArea.innerHTML = contentToDisplay;
     });
-
-    function fetchIngredientContent(foodName) {
-        fetch(`./ingredients/${foodName}.html`)
-            .then(response => response.text())
-            .then(data => {
-                ingredientContainer.innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Error fetching ingredient content:', error);
-            });
-    }
 });

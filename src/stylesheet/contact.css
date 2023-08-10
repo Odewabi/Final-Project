@@ -7,22 +7,18 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
 }
 
-/* Navigation Styles */
 .navbar {
     margin-bottom: 30px;
 }
 
-/* Form Styles */
 .form-label {
     font-weight: bold;
 }
 
-/* Footer Styles */
 .footer {
     background-color: #343a40;
     color: #fff;
@@ -35,7 +31,6 @@ body {
     margin: 10px 0;
 }
 
-/* Centering the footer text */
 .footer p {
     margin: 0;
 }

@@ -31,29 +31,24 @@ body {
     background-color: #343a40;
 }
 
-/* Navbar styles */
 .navbar {
     margin-bottom: 30px;
 }
 
-/* Card styles */
 .card-body {
     padding: 20px;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
     .card {
         width: auto;
     }
 }
 
-/* Center align text inside footer */
 .footer p, .footer h2 {
     text-align: center;
 }
 
-/* Adjust spacing */
 .footer i {
     margin-right: 5px;
 }

@@ -3,17 +3,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const cancelButton = document.getElementById('cancel-button');
 
     contactForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the form from actually submitting
+        event.preventDefault();
 
-        // Show an alert
         alert('Message has been submitted! Thank you for contacting.');
 
-        // Clear form fields
         contactForm.reset();
     });
 
     cancelButton.addEventListener('click', function() {
-        // Clear form fields
         contactForm.reset();
     });
 });
