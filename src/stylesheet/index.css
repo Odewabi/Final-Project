@@ -3,7 +3,7 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
 
 .jumbotron {
-    background: url('./path-to-your-background-image.jpg') center center/cover no-repeat;
+    background: url('Background.jpg') center center/cover no-repeat;
     color: black;
     text-align: center;
     padding: 40px 0 150px 0;

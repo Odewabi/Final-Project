@@ -10,6 +10,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    background: url('Instructions.jpg') center center/cover no-repeat;
 }
 
 .card {
