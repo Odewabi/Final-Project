@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
 
         const sourcePageURL = link.getAttribute('href');
-        const contentToDisplay = document.querySelector(ingredients.html).innerHTML;
+        const contentToDisplay = document.querySelector(sourcePageURL).innerHTML;
 
         displayArea.innerHTML = contentToDisplay;
     });
